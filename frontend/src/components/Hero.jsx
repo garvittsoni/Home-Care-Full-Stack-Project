@@ -35,17 +35,17 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black/60 z-0"></div>
 
             <div className="relative z-10 w-full max-w-5xl mx-auto">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-lg">
+                <h1 data-aos="fade-up" className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-lg">
                     <span className="text-green-600">{heroData.title.split(' ')[0]}</span>{' '}
                     {heroData.title.split(' ').slice(1).join(' ')}
                     <br className="hidden sm:block" /> {heroData.subtitle}
                 </h1>
 
-                <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow-md">
+                <p data-aos="fade-up" data-aos-delay="200" className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow-md">
                     {heroData.description}
                 </p>
 
-                <div className="w-full max-w-4xl mx-auto">
+                <div data-aos="zoom-in" data-aos-delay="400" className="w-full max-w-4xl mx-auto">
                     <div className="flex flex-col md:flex-row items-center bg-white rounded-3xl md:rounded-full p-2 shadow-2xl">
                         
                         <div className="relative flex items-center w-full md:w-auto px-5 py-3 md:py-2.5 hover:bg-gray-50 rounded-2xl md:rounded-full transition-all duration-300 cursor-pointer group border border-transparent hover:border-gray-200">

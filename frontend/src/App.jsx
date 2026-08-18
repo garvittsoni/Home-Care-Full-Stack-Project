@@ -1,6 +1,10 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 import { useAuth } from '@clerk/clerk-react';
 import { useEffect } from 'react';
+
+// AOS Library & Styles
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Home from "./pages/Home";
 import ProviderProfile from "./pages/ProviderProfile";
@@ -18,15 +22,24 @@ import Team from './components/Team';
 import EditProfile from './pages/EditProfile';
 
 function App() {
-
   const { getToken } = useAuth();
 
+  // Clerk Token Fetch
   useEffect(() => {
     const fetchMyToken = async () => {
       const token = await getToken();
       console.log("MERA_ASLI_TOKEN:", token);
     };
     fetchMyToken();
+  }, []);
+
+  // AOS Initialize
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Animation duration in ms
+      easing: 'ease-in-out', // Smooth animation curve
+      once: true, // Whether animation should happen only once while scrolling down
+    });
   }, []);
   
   return (
@@ -39,8 +52,8 @@ function App() {
         <Route path='/PartnerRegistration' element={<PartnerRegistration />} />
         <Route path='/edit-profile/:id' element={<EditProfile />} />
         <Route path='/team' element={<Team />} /> 
+        
         {/* === PROTECTED ADMIN ROUTES (Sirf allowed emails wale) === */}
-        {/* NAYA: AdminLayout ko AdminRoute ke andar wrap kar diya hai */}
         <Route 
           path="/admin" 
           element={
@@ -49,7 +62,6 @@ function App() {
             </AdminRoute>
           }
         >
-          {/* Ye saare routes ab automatically secure ho gaye! */}
           <Route index element={<Dashboard />} />
           <Route path="categories" element={<Categories />} />
           <Route path="services" element={<Services />} />

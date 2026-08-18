@@ -31,13 +31,13 @@ const Navbar = () => {
   return (
     <>
       {/* --- MAIN NAVBAR --- */}
-      <header className="bg-white shadow-md sticky top-0 z-50">
+      <header data-aos="fade-down" className="bg-white shadow-md sticky top-0 z-50">
 
         {/* Top Navbar Row */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
 
           {/* Left Side: KarauliHomeCare Logo & Brand Name */}
-          <div className="flex items-center gap-3">
+          <div data-aos="fade-right" className="flex items-center gap-3">
             <div className="bg-green-100 text-green-600 w-10 h-10 flex items-center justify-center rounded-full shadow-sm">
               <FaHouseChimneyMedical className="text-lg" />
             </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
 
           {/* Right Side: Login Button & Mobile Toggle */}
-          <div className="flex items-center gap-4">
+          <div data-aos="fade-left" className="flex items-center gap-4">
 
             {/* Desktop Login / Profile Section */}
             <div className="hidden sm:flex items-center gap-4">
@@ -94,7 +94,7 @@ const Navbar = () => {
         </div>
 
         {/* Bottom Navigation Links (Desktop) */}
-        <div className="hidden md:flex justify-center items-center gap-8 py-3 border-t border-gray-200 text-sm font-semibold tracking-wide text-gray-800">
+        <div data-aos="fade-in" className="hidden md:flex justify-center items-center gap-8 py-3 border-t border-gray-200 text-sm font-semibold tracking-wide text-gray-800">
           <button
             onClick={() => scrollToSection("about")}
             className="hover:text-green-600 transition duration-200 cursor-pointer"
@@ -124,7 +124,7 @@ const Navbar = () => {
 
         {/* Mobile Dropdown Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-200 py-4 px-6 space-y-4 shadow-xl">
+          <div data-aos="fade-down" className="md:hidden bg-white border-t border-gray-200 py-4 px-6 space-y-4 shadow-xl">
             <button 
               onClick={() => { scrollToSection("about"); }} 
               className="block w-text-left text-gray-700 font-medium hover:text-green-600 text-left"
