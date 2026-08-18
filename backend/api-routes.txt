@@ -1,0 +1,83 @@
+=========================================================
+🏠 HOMECARE APP - API ROUTES DOCUMENTATION
+=========================================================
+Base URL: http://localhost:5000
+
+---------------------------------------------------------
+📂 1. PARTNER ROUTES (Total: 5)
+---------------------------------------------------------
+
+1. 🟢 [POST] Naya partner register karein (Form-data for images)
+http://localhost:5000/api/partners/register
+
+2. 🟢 [GET] Saare partners ki list dekhein 
+http://localhost:5000/api/partners
+
+3. 🔴 [GET] Kisi ek partner ki poori details dekhein (Clerk Token Required)
+http://localhost:5000/api/partners/6a705ac8ebc89ad50a25ee8d
+
+4. 🟡 [PUT] Partner ka status update karein (e.g., "Approved")
+http://localhost:5000/api/partners/6a705ac8ebc89ad50a25ee8d/status
+
+5. 🔴 [DELETE] Partner ko database se permanently delete karein
+http://localhost:5000/api/partners/6a705ac8ebc89ad50a25ee8d
+
+
+---------------------------------------------------------
+🔍 2. SEARCH ROUTE (Total: 1)
+---------------------------------------------------------
+
+6. 🟢 [GET] Categories aur Services mein naam se search karein
+http://localhost:5000/api/search?query=Cleaning
+
+
+---------------------------------------------------------
+🗂️ 3. CATEGORY ROUTES (Total: 4)
+---------------------------------------------------------
+
+7. 🟢 [GET] Saari main categories fetch karein
+http://localhost:5000/api/categories
+
+8. 🟢 [POST] Nayi category create karein 
+http://localhost:5000/api/categories
+
+9. 🟡 [PUT] Kisi existing category ka naam/icon update karein
+http://localhost:5000/api/categories/CATEGORY_ID_HERE
+
+10. 🔴 [DELETE] Kisi category ko delete karein
+http://localhost:5000/api/categories/CATEGORY_ID_HERE
+
+
+---------------------------------------------------------
+🛠️ 4. SERVICE ROUTES / SUB-CATEGORIES (Total: 4)
+---------------------------------------------------------
+
+11. 🟢 [GET] Saari services (sub-categories) fetch karein
+http://localhost:5000/api/services
+
+12. 🟢 [POST] Nayi service create karein
+http://localhost:5000/api/services
+
+13. 🟡 [PUT] Kisi existing service ka data update karein
+http://localhost:5000/api/services/SERVICE_ID_HERE
+
+14. 🔴 [DELETE] Kisi service ko delete karein
+http://localhost:5000/api/services/SERVICE_ID_HERE
+
+
+---------------------------------------------------------
+⭐ 5. REVIEW ROUTES (Total: 2)
+---------------------------------------------------------
+
+15. 🟢 [GET] Kisi ek partner ke saare reviews dekhein
+http://localhost:5000/api/reviews/6a705ac8ebc89ad50a25ee8d
+
+16. 🟡 [POST] Partner ko naya review/rating dein
+http://localhost:5000/api/reviews
+
+---------------------------------------------------------
+💡 KEY LEGEND:
+🟢 = Public Route (Bina login ke chalega)
+🟡 = Action Route (Update/Create karne ke liye)
+🔴 = Secure/Critical Route (Login/Token ya Admin access chahiye)
+---------------------------------------------------------
