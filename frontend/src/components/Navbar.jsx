@@ -43,7 +43,7 @@ const Navbar = () => {
             </div>
 
             <Link to="/" className="text-xl sm:text-2xl font-black tracking-wider uppercase text-slate-900">
-              Home <span className="text-green-600">Care</span>
+              Home <span className="text-green-600">ZO</span>
             </Link>
           </div>
 
