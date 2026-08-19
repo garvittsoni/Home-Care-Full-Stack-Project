@@ -13,8 +13,8 @@ import heroImage from '../images/hero_image.avif';
 // 1. Hero Data
 export const heroData = {
   bgImage: heroImage,
-  title: "Professional Cleaning Solutions at",
-  subtitle: "Your Doorstep",
+  title: "Your All-in-One Home Helper & Expert Care",
+  subtitle: " at Your Doorstep",
   description: "Book verified local cleaning experts for deep cleaning, regular upkeep, and a healthier home environment."
 }; //[cite: 3]
 
