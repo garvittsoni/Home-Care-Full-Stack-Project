@@ -14,7 +14,7 @@ const Footer = () => {
         {/* Logo & About */}
         <div className="flex flex-col items-start">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-            Home<span className="text-green-500">Care</span>
+            Home<span className="text-green-500">Zo</span>
           </h1>
           <p className="mt-4 sm:mt-5 leading-6 sm:leading-7 text-gray-400 text-xs sm:text-sm md:text-base">
             We provide reliable home services with experienced professionals.
@@ -97,8 +97,8 @@ const Footer = () => {
             <div className="flex gap-3 sm:gap-4">
               <FaPhoneAlt className="text-green-500 mt-1 flex-shrink-0" />
               <div>
-                <p>+91 784547 8516</p>
-                <p>+91 14578 45789</p>
+                <p>+91 XXXXXX 8516</p>
+                <p>+91 XXXXXX 5789</p>
               </div>
             </div>
 
@@ -112,9 +112,9 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="border-t border-white/10 mt-10 sm:mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between text-gray-400 text-xs sm:text-sm gap-4 text-center">
-        <p>© {new Date().getFullYear()} HomeCare. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Home Zo. All Rights Reserved.</p>
         <p className="font-medium tracking-wide">
-          Powered by <span className="text-green-400 font-semibold">Ktech Education Group</span>
+          Powered by <span className="text-green-400 font-semibold">K tech Education Group</span>
         </p>
       </div>
     </footer>
