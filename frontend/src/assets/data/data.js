@@ -13,9 +13,9 @@ import heroImage from '../images/hero_image.avif';
 // 1. Hero Data
 export const heroData = {
   bgImage: heroImage,
-  title: "Your All-in-One Home Helper & Expert Care",
+  title: "Your All-in-One Home Helper",
   subtitle: " at Your Doorstep",
-  description: "Book verified local cleaning experts for deep cleaning, regular upkeep, and a healthier home environment."
+  description: "Trained, background-verified professionals ready to solve all your home and daily lifestyle problems with 100% precision."
 }; //[cite: 3]
 
 // 2. Experience / Stats Data
