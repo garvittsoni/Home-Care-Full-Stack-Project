@@ -13,9 +13,9 @@ import heroImage from '../images/hero_image.avif';
 // 1. Hero Data
 export const heroData = {
   bgImage: heroImage,
-  title: "Professional Cleaning",
-  subtitle: "Services in Karauli",
-  description: "Homecare Solutions – India's trusted cleaning service for homes, villas and apartments since 2026."
+  title: "Professional Cleaning Solutions at",
+  subtitle: "Your Doorstep",
+  description: "Book verified local cleaning experts for deep cleaning, regular upkeep, and a healthier home environment."
 }; //[cite: 3]
 
 // 2. Experience / Stats Data
